@@ -1,0 +1,10 @@
+Issue: dual-boot timezone issue
+Fix: timedatectl set-local-rtc 1
+
+Issue: read-only ntfs disks in linux
+Fix: sudo ntfsfix /dev/sdxX
+#[it will remove any logfile created by windows.]
+#where x is HDD and X is drive number(/dev/sda1)
+#you can check by running : 
+sudo fdisk -l
+
